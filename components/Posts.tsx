@@ -6,7 +6,7 @@ import { Post } from '../typings';
 interface Props {
     posts: Post[];
   }
-  
+
 
 const Posts = ({ posts }: Props) => {
   return (
@@ -19,7 +19,7 @@ const Posts = ({ posts }: Props) => {
                         <div>
                             <p className='text-lg font-bold'>{post.title}</p>
                             <p className='text-xs'>{post.description} by {post.title}</p>
-                        </div> 
+                        </div>
                         <img className='h-12 w-12 rounded-full' src={urlFor(post.author.image).url()!} />
                     </div>
                 </div>
